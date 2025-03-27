@@ -16,7 +16,7 @@
     <link rel="shorcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
-    
+
     <!--Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -151,7 +151,118 @@
             </div>
           </div>
         </section>
-       
+
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+          <div class="form">
+            <form class="form reservation__form">
+              <fieldset class="form__fieldset">
+                <label for="name" class="form form__label form__label_name"
+                  >Nombre *
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form form__input form__input_name"
+                    placeholder="Nombre"
+                    required
+                  />
+                </label>
+                <label
+                  for="number-guests"
+                  class="form form__label form__label_number-guests"
+                  >Número de comensales *
+                  <input
+                    type="number"
+                    id="number-guests"
+                    name="number-guests"
+                    min="1"
+                    max="8"
+                    class="form form__input form__input_number-guests"
+                    placeholder="1-8"
+                    required
+                  />
+                </label>
+                <label
+                  for="datetime"
+                  class="form form__label form__label_datetime"
+                  >Fecha y hora *
+                  <input
+                    type="datetime-local"
+                    id="datetime"
+                    name="datetime"
+                    class="form form__input form__input_datetime"
+                    required
+                  />
+                </label>
+                <label for="email" class="form form__label form__label_email"
+                  >Tu correo electrónico *
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form form__input form__input_email"
+                    placeholder="email@email.com"
+                    required
+                  />
+                </label>
+                <button type="submit" id="button" class="form form__button">
+                  Reservar una mesa
+                </button>
+                <label
+                  for="checkbox"
+                  class="form form__label form__label_checkbox"
+                >
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    name="checkbox"
+                    class="form form__checkbox"
+                    required
+                  />
+                  <span class="form form__span form__span_checkbox"
+                    >Acepto los términos de uso</span
+                  >
+                </label>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="contactos">
+        <div class="footer__circle"></div>
+        <div class="footer__content">
+          <img
+            src="./images/logo_coffeeshop_light.svg"
+            alt="Logotipo de la Cafetería Triple Expresso"
+            class="footer__logo"
+          />
+          <div class="footer__social">
+            <h3 class="footer__social footer__social-heading">
+              Redes sociales
+            </h3>
+            <ul class="footer__social footer__list">
+              <li class="footer__list footer__list-item">
+                <img
+                  src="./images/facebook_white.svg"
+                  alt="Logotipo de Facebook"
+                  class="footer__social-icon"
+                />
+                <a href="#" class="footer__social-link">Facebook</a>
+              </li>
+              <li class="footer__list footer__list-item">
+                <img
+                  src="./images/instagram_white.svg"
+                  alt="Logotipo de Instagram"
+                  class="footer__social-icon"
+                />
+                <a href="#" class="footer__social-link">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright">© 2025 Mario Campos</div>
+      </footer>
     </div>
   </body>
 </html>
