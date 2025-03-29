@@ -150,20 +150,19 @@
 
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Reservar una mesa</h2>
-          <div class="form">
-            <form class="form reservation__form">
-              <fieldset class="form__fieldset">
-                <label for="name" class="form form__label form__label_name"
-                  >Nombre *
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    class="form form__input form__input_name"
-                    placeholder="Nombre"
-                    required
+          <form class="reservation__form form">
+            <fieldset class="form__fieldset">
+              <label for="form-name" class="form__label"
+                ><span class="form__required">Nombre *</span>
+                <input
+                  type="text"
+                  id="form-name"
+                  placeholder="Nombre"
+                  class="form__input"
+                  required
                   />
                 </label>
+
                 <label
                   for="number-guests"
                   class="form form__label form__label_number-guests"
@@ -179,6 +178,7 @@
                     required
                   />
                 </label>
+                
                 <label
                   for="datetime"
                   class="form form__label form__label_datetime"
