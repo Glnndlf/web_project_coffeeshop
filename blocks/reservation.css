@@ -10,14 +10,14 @@
 }
 
 .reservation__title {
-  margin: /*100px 0 0 80px;*/ 0px auto 80px
+  margin: /*100px 0 0 80px;*/ 0px auto 80px;
   /*color: #000000;*/
   ont-family: "Inter", Arial, serif;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
-  padding-top:100px;
+  padding-top: 100px;
 }
 
 .reservation__form {
