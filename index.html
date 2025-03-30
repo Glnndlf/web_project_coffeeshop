@@ -79,6 +79,7 @@
           </div>
         </div>
       </header>
+
       <main class="content">
         <section class="recipes" id="recipes">
           <div class="recipes__title">
@@ -90,6 +91,7 @@
               tus propios snacks.
             </p>
           </div>
+
           <div class="recipes__videos">
             <div class="recipes__video-item">
               <iframe
@@ -118,6 +120,7 @@
                 </div>
               </div>
             </div>
+
             <div class="recipes__video-item">
               <iframe
                 class="recipes__iframe"
@@ -150,7 +153,7 @@
 
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Reservar una mesa</h2>
-          <form class="reservation__form form">
+          <div form class="reservation__form form">
             <fieldset class="form__fieldset">
               <label for="form-name" class="form__label"
                 ><span class="form__required">Nombre *</span>
@@ -160,71 +163,74 @@
                   placeholder="Nombre"
                   class="form__input"
                   required
-                  />
-                </label>
+                />
+              </label>
 
-                <label
-                  for="number-guests"
-                  class="form form__label form__label_number-guests"
-                  >Número de comensales *
-                  <input
-                    type="number"
-                    id="number-guests"
-                    name="number-guests"
-                    min="1"
-                    max="8"
-                    class="form form__input form__input_number-guests"
-                    placeholder="1-8"
-                    required
-                  />
-                </label>
-                
-                <label
-                  for="datetime"
-                  class="form form__label form__label_datetime"
-                  >Fecha y hora *
-                  <input
-                    type="datetime-local"
-                    id="datetime"
-                    name="datetime"
-                    class="form form__input form__input_datetime"
-                    required
-                  />
-                </label>
-                <label for="email" class="form form__label form__label_email"
-                  >Tu correo electrónico *
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="form form__input form__input_email"
-                    placeholder="email@email.com"
-                    required
-                  />
-                </label>
-                <button type="submit" id="button" class="form form__button">
-                  Reservar una mesa
-                </button>
-                <label
-                  for="checkbox"
-                  class="form form__label form__label_checkbox"
+              <label
+                for="number-guests"
+                class="form form__label form__label_number-guests"
+                >Número de comensales *
+                <input
+                  type="number"
+                  id="number-guests"
+                  name="number-guests"
+                  min="1"
+                  max="8"
+                  class="form form__input form__input_number-guests"
+                  placeholder="1-8"
+                  required
+                />
+              </label>
+
+              <label
+                for="datetime"
+                class="form form__label form__label_datetime"
+                >Fecha y hora *
+                <input
+                  type="datetime-local"
+                  id="datetime"
+                  name="datetime"
+                  class="form form__input form__input_datetime"
+                  required
+                />
+              </label>
+
+              <label for="email" class="form form__label form__label_email"
+                >Tu correo electrónico *
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form form__input form__input_email"
+                  placeholder="email@email.com"
+                  required
+                />
+              </label>
+
+              <button type="submit" id="button" class="form form__button">
+                Reservar una mesa
+              </button>
+
+              <label
+                for="checkbox"
+                class="form form__label form__label_checkbox"
+              >
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  name="checkbox"
+                  class="form form__checkbox"
+                  required
+                />
+                <span class="form form__span form__span_checkbox"
+                  >Acepto los términos de uso</span
                 >
-                  <input
-                    type="checkbox"
-                    id="checkbox"
-                    name="checkbox"
-                    class="form form__checkbox"
-                    required
-                  />
-                  <span class="form form__span form__span_checkbox"
-                    >Acepto los términos de uso</span
-                  >
-                </label>
-              </fieldset>
-            </form>
+              </label>
+            </fieldset>
           </div>
         </section>
       </main>
+
       <footer class="footer" id="contactos">
         <div class="footer__circle"></div>
         <div class="footer__content">
@@ -260,5 +266,6 @@
         <div class="footer__copyright">© 2025 GFSL</div>
       </footer>
     </div>
+    <!--L36><-->
   </body>
 </html>
